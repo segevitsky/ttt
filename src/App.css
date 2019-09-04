@@ -1,33 +1,87 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ol, ul {
+    padding-left: 30px;
   }
-  to {
-    transform: rotate(360deg);
+    
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+  
+  .game-info {
+    margin-left: 20px;
   }
+
+  .game-board {
+    display: flex;
+    flex-direction: column;   
+    /* align-items: center; */
+    margin-top: 50px;
+    position: relative;
+ 
+ }
+
+  .second {
+    text-decoration: none;
+    cursor: pointer;
+    color:white;   
+    box-shadow: 1px 1px 1px 0.5px rgba(0,0,0,.5);
+    padding: 20px;
+    background-color: #ef4658;
+  }
+
+  .h1 {
+    color:#ffffff;
+    position: left;
+    display: flex;
+    align-content: flex-start;
+    
+  }
+
+  .h2:hover {
+    color:#2f3239;
+    
+  }
+
+  h2::after {
+    color:  #1080cf;
+  }
+    a {
+    text-decoration: none;
+  }
+  
+  
+.fas {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+.whole-game {
+  background: linear-gradient(to right, #3E5151,#DECBA4);
+  padding: 20px;
+  height: 95vh;
+
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.active {
+  display: block;
+  animation-duration: 0.3s;
+  animation-name: slideDown;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
