@@ -6,7 +6,7 @@ export default function Navbar(props) {
     <div>
       <nav className="navbar">
         <label
-          onClick = {props.clicking}
+          onClick = {props.openMenu}
           className={"navbar-toggle"}
           id="js-navbar-toggle"
           htmlFor="chkToggle"
@@ -20,8 +20,6 @@ export default function Navbar(props) {
           <i className="fas fa-crosshairs"></i>{" "}
         </button>
         <ul 
-        // className={`main-nav ${props.clicking ? 'active' : ''}`} //Check out
-        // why this doesnt work! fuck me!
         className='main-nav'
         id="js-menu"
         >

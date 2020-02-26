@@ -26,6 +26,10 @@ class App extends React.Component {
     })
   };
 
+  showMenuForNav = (state) => {
+    this.setState({
+      showMenu: !state.showMenu})
+  }
 
   render() {
     return (
@@ -37,7 +41,7 @@ class App extends React.Component {
         <Navbar
           clicking={this.openMenuListener}
           clicked={this.startGameListener}
-          openMenu={this.state.navbar}
+          // openMenu={this.showMenuForNav}
         />
         <div className="whole-game">
           <div className="game">

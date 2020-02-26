@@ -33,3 +33,13 @@
   .winner {
     background-color: yellow;
   }
+
+
+  @media screen and (max-width: 450px) {
+    .square {
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+    }
+
+  }
