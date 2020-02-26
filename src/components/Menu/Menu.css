@@ -116,7 +116,7 @@
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .menu-header {
         font-size: 60px;
         text-align: center;
