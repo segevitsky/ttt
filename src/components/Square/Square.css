@@ -1,21 +1,22 @@
 .square {
-    background: #fff;
+    background-color: tomato;
     float: left;
-    font-size:24px;
+    font-size:44px;
     font-weight: bold;
     line-height: 34px;
-    height: 104px;
-    width: 104px;
+    height: 154px;
+    width: 154px;
     margin-top: -1px;
     cursor: pointer;
     margin-right: 5px;
     margin-bottom: 5px;
     border: none; 
+    color: white;
 
   }
 
   .square:hover {
-    background-color: #034f84;
+    background-color: #f4f3ea;
   }
   
   .square:focus {

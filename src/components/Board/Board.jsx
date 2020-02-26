@@ -69,7 +69,6 @@ class Board extends React.Component {
     console.log(winner);
     if (winner) {
       let win = JSON.stringify(winner.winner);
-      // console.log(winningStreak);
       // console.log(winner);
       status = winnerText + win.replace(/['"]+/g, "") + "!";
     } else {
@@ -88,7 +87,7 @@ class Board extends React.Component {
          onClick={this.restartGame}
          className='restart'
          >
-           Restart Game</button>
+           Start Over?</button>
         <div className='wholeBoard'>
           <div >
             {this.createBoard(3,3)}

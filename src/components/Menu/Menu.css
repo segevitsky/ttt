@@ -3,13 +3,39 @@
     content: '';
     background-image: url('https://cdn3.iconfinder.com/data/icons/digital-game-sports-medical/1000/file-49-512.png');
     background-size: 100px 100px;
+    background-color: tomato;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 15px;
     width: 100px;
     height: 100px;
     position: relative;
-    left: 0;
+    left: -7em;
     font-size: 40px;
-    top: 2em;
+    top: 2.2em;
+    
 }
+.menu-container::after {
+    content: '';
+    background-image: url('https://cdn3.iconfinder.com/data/icons/digital-game-sports-medical/1000/file-49-512.png');
+    background-size: 100px 100px;
+    background-color: tomato;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 7em;
+    font-size: 40px;
+    top: -5.2em;
+
+}
+
 
 
 .menu-container {
@@ -27,16 +53,18 @@
 
 .menu-header {
     font-size: 80px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.19);
 }
 
-.menu-content__container {
+/* .menu-content__container {
     margin-top: 3em;
-}
+} */
 
 .btn-container {
     display: flex;  
     flex-direction: column;
     justify-content: center;
+    outline: none;
 }
 
 .menu-btn {
@@ -46,5 +74,44 @@
     padding: 5px;
     margin: 15px 10px;
     cursor: pointer;
+    font-size: 20px;
+    transition: background-color ease-in 500ms;
 }
 
+.menu-btn:hover {
+    background-color: tomato;
+    color: white;
+}
+
+
+.menu-btn--one {
+    animation: moveInLeft 1s forwards;
+}
+
+.menu-btn--two {
+    width: 90%;
+    margin-left: 5%;
+    animation: moveInLeft 1.5s forwards;
+    /* animation-delay: -200ms; */
+
+}
+
+.menu-btn--three {
+    width: 80%;
+    margin-left: 10%;
+    animation: moveInLeft 2s forwards;
+    /* animation-delay: -300ms; */
+
+}
+
+
+
+@keyframes moveInLeft {
+    from {transform: translateX(-2000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,5 +1,5 @@
 .navbar {
-    font-size: 18px;
+    font-size: 24px;
     background-color: white;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
@@ -20,7 +20,7 @@
     color: black;
     background-color: transparent;
     border: none;
-    font-size: 14px;
+    font-size: 18px;
     outline: none;
     cursor: pointer;
 }
@@ -32,7 +32,7 @@
 
 .logo {
     display: inline-block;
-    font-size: 22px;
+    font-size: 54px;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -80,14 +80,15 @@
 
     .nav-links {
         margin-left: 40px;
-        transition: transform 500ms ease-in;
-
-
+        transition: transform 300ms ease-in;
     }
+
     
     .logo {
         margin-top: 0;
+        transition: transform 300ms ease-in;
     }
+
     .navbar-toggle {
         display: none;
     }
@@ -95,5 +96,6 @@
     .logo:hover,
     .nav-links:hover {
         transform: translateY(-2px);
+        color: tomato;
     }
 }
