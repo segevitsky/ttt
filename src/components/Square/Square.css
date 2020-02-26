@@ -1,5 +1,6 @@
 .square {
     background-color: tomato;
+    border-radius: 9px;
     float: left;
     font-size:44px;
     font-weight: bold;

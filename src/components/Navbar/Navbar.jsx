@@ -19,7 +19,7 @@ export default function Navbar(props) {
           <i className="fas fa-compress-arrows-alt"></i> vs
           <i className="fas fa-crosshairs"></i>{" "}
         </button>
-        <ul 
+        {/* <ul 
         className='main-nav'
         id="js-menu"
         >
@@ -46,7 +46,7 @@ export default function Navbar(props) {
               Records{" "}
             </button>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   );
