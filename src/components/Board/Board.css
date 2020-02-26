@@ -29,7 +29,7 @@
 	font-weight: 100;
 	font-size: 44px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 	color: tomato;
 	transition: transform 500ms ease-in;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.19);
@@ -37,7 +37,7 @@
 }
 
 .restart:hover {
-	transform: scale(1.5);
+	transform: scale(1.25);
 }
 
 @keyframes moveInBottom {
@@ -52,3 +52,13 @@
 	}
 }
 
+
+@media screen and (max-width: 450px) {
+    .restart {
+		margin-bottom: 60px;
+		font-size: 34px;
+    }
+	.wholeBoard {
+		box-shadow: 5px 5px;
+	}
+  }

@@ -43,3 +43,28 @@
     from {transform: scale(0); }
     to {transform: scale(1)}
 }
+
+@media screen and (max-width: 680px) {
+    .gameover-heading {
+        font-size: 60px;
+        text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 350px) {
+      .gameover-heading {
+          font-size: 40px;
+          text-align: center;
+      }
+
+      .gameover-subheading {
+          text-align: center;
+          font-size: 18px;
+      }
+
+      .playAgainBtn {
+        font-size: 16px;
+        padding: 5px;
+      }
+    }

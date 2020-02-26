@@ -115,3 +115,24 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@media screen and (max-width: 350px) {
+    .menu-header {
+        font-size: 60px;
+        text-align: center;
+    }
+    .menu-btn {
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .menu-container::before {
+        top: 1em;
+        left: 0;
+    }
+    .menu-container::after {
+        top: 0.5em;
+        left: 0;
+    }
+}
+
