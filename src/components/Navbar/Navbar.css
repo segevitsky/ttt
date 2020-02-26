@@ -1,6 +1,6 @@
 .navbar {
     font-size: 18px;
-    background-image:  linear-gradient(260deg, #ef4658 0%, #FFF 100%);
+    background-color: white;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
@@ -18,6 +18,11 @@
 .logo {
     text-decoration: none;
     color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
 }
 
 .main-nav li {
@@ -73,9 +78,13 @@
         margin-right: 30px;
     }
 
-    .nav-link {
+    .nav-links {
         margin-left: 40px;
+        transition: transform 500ms ease-in;
+
+
     }
+    
     .logo {
         margin-top: 0;
     }
@@ -85,6 +94,6 @@
     
     .logo:hover,
     .nav-links:hover {
-        color: rgba(255, 255, 255, 1);
+        transform: translateY(-2px);
     }
 }

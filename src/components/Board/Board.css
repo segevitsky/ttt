@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-self: center;
+  animation: comeInPlease 1s ease-out; 
+
 }
 
 .wholeBoard:after {
@@ -13,41 +15,32 @@
   .status {
     margin-bottom: 20px;
     margin-left: 10px;
-    color:hotpink;
+    color:#fff;
     font-weight: 100;
     font-size: 24px;
+    text-align: center;
   }
 
 .winner {
   background-color: yellow;
 }
 
-.wholeBoard {
-  animation: moveInBottom 1s ease-out; 
-  border: 10px solid #034f84;
-  box-shadow: 1px 2px 1.5px 4px rgba(0,0,0,.5);
-  display: flex;
-  flex-direction: column;
-}
 
 .restart {
   display: inline-block;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 10px;  
-  color: black;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  outline: none;
   font-weight: 100;
   font-size: 24px;
-  -webkit-text-decoration: hotpink double underline;
-  text-decoration: hotpink double underline;
-  margin-bottom: 20px;
+  margin: 50px;
+  transition: transform 500ms ease-in;
+  
 }
 
 .restart:hover {
-  color: white;
-  text-decoration:  pink double underline;
-  transform: translateY(-2px);
+  transform: scale(2);
     
 }
 

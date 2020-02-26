@@ -7,18 +7,18 @@ export default function Navbar(props) {
       <nav className="navbar">
         <label
           onClick = {props.clicking}
-          className="navbar-toggle"
+          className={"navbar-toggle"}
           id="js-navbar-toggle"
           htmlFor="chkToggle"
         >
           <i className="fa fa-bars" ></i>
         </label>
-        <a href="#" className="logo">
+        <button className="logo">
           {" "}
           <input type="checkbox" id="chkToggle"></input>
           <i className="fas fa-compress-arrows-alt"></i> vs
           <i className="fas fa-crosshairs"></i>{" "}
-        </a>
+        </button>
         <ul 
         // className={`main-nav ${props.clicking ? 'active' : ''}`} //Check out
         // why this doesnt work! fuck me!
@@ -26,27 +26,27 @@ export default function Navbar(props) {
         id="js-menu"
         >
           <li>
-            <a href="#" className="nav-links">
+            <button className="nav-links">
               Home
-            </a>
+            </button>
           </li>
           <li>
-            <a onClick= {props.clicked} href="#" className="nav-links">
+            <button onClick= {props.clicked} href="#" className="nav-links">
               New Game
-            </a>
+            </button>
           </li>
 
           <li>
-            <a href="#" className="nav-links">
+            <button className="nav-links">
               Play-Online
-            </a>
+            </button>
           </li>
 
           <li>
-            <a href="#" className="nav-links">
+            <button className="nav-links">
               {" "}
               Records{" "}
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

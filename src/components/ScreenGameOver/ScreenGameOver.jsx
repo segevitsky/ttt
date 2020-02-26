@@ -2,14 +2,17 @@ import React from 'react'
 import './ScreenGameOver.css'
 
 
-
-
 export default function ScreenGameOver(props) {
+    console.log(props)
     return (
         <div className='screen'>
+            <h1> {props.status}</h1>
+            <h3>{props.winningStreak}</h3>
             <h2 >Don't Worry, you'll get him next time!</h2 >
-            
-            {/* <a onClick={props.clicked}> </a> */}
+            <button
+             className='playAgainBtn'
+             onClick={props.onClick} 
+             > Play Again? </button>
         </div>
     )
 }

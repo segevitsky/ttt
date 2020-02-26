@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Board from "./components/Board/Board";
 import Navbar from "./components/Navbar/Navbar";
+import Menu from './components/Menu/Menu';
 // import ScreenGameOver from './components/ScreenGameOver/ScreenGameOver';
 
 class App extends React.Component {
@@ -9,26 +10,34 @@ class App extends React.Component {
     squares: Array(9).fill(null),
     showSquares: false,
     StartNewGame: false,
-    showMenu: false
+    showMenu: true,
+    navBar: ''
   };
 
   startGameListener = () => {
     const didGameStart = this.state.showSquares;
     this.setState({ showSquares: !didGameStart });
+    this.setState({showMenu: false})
   };
 
   openMenuListener = () => {
-    this.setState(prevState => {
-      return { showMenu: !prevState.showMenu };
-    });
+    this.setState({
+      navBar: 'active',
+    })
   };
+
 
   render() {
     return (
       <>
+      {
+        this.state.showMenu ?
+        <Menu click={this.startGameListener}/> : null
+      }
         <Navbar
           clicking={this.openMenuListener}
           clicked={this.startGameListener}
+          openMenu={this.state.navbar}
         />
         <div className="whole-game">
           <div className="game">

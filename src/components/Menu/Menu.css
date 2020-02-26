@@ -1,0 +1,50 @@
+
+.menu-container::before {
+    content: '';
+    background-image: url('https://cdn3.iconfinder.com/data/icons/digital-game-sports-medical/1000/file-49-512.png');
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;
+    font-size: 40px;
+    top: 2em;
+}
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.menu-header {
+    font-size: 80px;
+}
+
+.menu-content__container {
+    margin-top: 3em;
+}
+
+.btn-container {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-btn {
+    display: block;
+    background-color: white;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+

@@ -7,6 +7,7 @@ class Board extends React.Component {
   state = {
     squares: Array(9).fill(null),
     xIsNext: true,
+    GameOver: false,
     
   };
 
@@ -83,19 +84,23 @@ class Board extends React.Component {
 
     return (
       <>
-        <a
+        <button
          onClick={this.restartGame}
          className='restart'
          >
-           Restart Game</a>
-        <div className="status"> {status} </div>
-        <div className="status"> {zib} </div>
+           Restart Game</button>
         <div className='wholeBoard'>
           <div >
             {this.createBoard(3,3)}
           </div>
         </div>
-        {winner ? <ScreenGameOver /> : null}
+        {
+        winner ? <ScreenGameOver 
+        onClick={this.restartGame}
+        status={status}
+        winningStreak={zib}
+        /> : null
+        }
         
       </>
     );
@@ -135,6 +140,6 @@ export default Board;
 
 const winnerText = "And The Winner Is... ";
 const next = "Next player: ";
-const noWinner = "No Winner";
+// const noWinner = "No Winner";
 
 
